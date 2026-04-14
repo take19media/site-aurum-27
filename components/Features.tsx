@@ -18,7 +18,7 @@ export function Features() {
           }}>
             {features.heading}
           </h2>
-          {features.subheading && features.subheading !== "{{FEATURES_SUBHEADING}}" && (
+          {features.subheading && (
             <p style={{ color: "var(--color-muted)", fontSize: "1.1rem", lineHeight: 1.7 }}>
               {features.subheading}
             </p>

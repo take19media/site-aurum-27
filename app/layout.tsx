@@ -3,7 +3,7 @@ import { siteConfig } from "../config/site";
 import { getStyleTokens, type StyleFamily } from "../config/style";
 import "./globals.css";
 
-const tokens = getStyleTokens(siteConfig.style as StyleFamily);
+const tokens = getStyleTokens((siteConfig.style as unknown) as StyleFamily);
 
 export const metadata: Metadata = {
   title: siteConfig.brand.name,

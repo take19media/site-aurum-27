@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section id="hero" style={{ padding: "var(--section-padding) 0", borderBottom: "1px solid var(--color-border)" }}>
       <div className="container">
-        {hero.image && hero.image !== "{{HERO_IMAGE}}" && (
+        {hero.image && (
           <img
             src={hero.image}
             alt={hero.headline}
@@ -40,7 +40,7 @@ export function Hero() {
           }}>
             {hero.subheadline}
           </p>
-          {hero.body && hero.body !== "{{HERO_BODY}}" && (
+          {hero.body && (
             <p style={{
               fontSize: "1rem",
               color: "var(--color-muted)",
@@ -65,7 +65,7 @@ export function Hero() {
             }}>
               {hero.cta_primary}
             </a>
-            {hero.cta_secondary && hero.cta_secondary !== "{{HERO_CTA_SECONDARY}}" && (
+            {hero.cta_secondary && (
               <a href="#about" style={{
                 display: "inline-block",
                 padding: "14px 32px",

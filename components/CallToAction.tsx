@@ -40,7 +40,7 @@ export function CallToAction() {
           }}>
             {cta.button}
           </a>
-          {cta.subtext && cta.subtext !== "{{CTA_SUBTEXT}}" && (
+          {cta.subtext && (
             <p style={{
               color: "var(--color-muted)",
               fontSize: "0.85rem",

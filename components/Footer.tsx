@@ -46,19 +46,19 @@ export function Footer() {
             }}>
               Contact
             </p>
-            {footer.contact.email && footer.contact.email !== "{{FOOTER_EMAIL}}" && (
+            {footer.contact.email && (
               <p style={{ color: "var(--color-muted)", fontSize: "0.9rem", marginBottom: "6px" }}>
                 <a href={`mailto:${footer.contact.email}`} style={{ color: "var(--color-muted)", textDecoration: "none" }}>
                   {footer.contact.email}
                 </a>
               </p>
             )}
-            {footer.contact.phone && footer.contact.phone !== "{{FOOTER_PHONE}}" && (
+            {footer.contact.phone && (
               <p style={{ color: "var(--color-muted)", fontSize: "0.9rem", marginBottom: "6px" }}>
                 {footer.contact.phone}
               </p>
             )}
-            {footer.contact.address && footer.contact.address !== "{{FOOTER_ADDRESS}}" && (
+            {footer.contact.address && (
               <p style={{ color: "var(--color-muted)", fontSize: "0.9rem", lineHeight: 1.6 }}>
                 {footer.contact.address}
               </p>
