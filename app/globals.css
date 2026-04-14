@@ -1,0 +1,61 @@
+/* CSS custom properties set by the engine at build time */
+:root {
+  --color-background: var(--site-background, #ffffff);
+  --color-text: var(--site-text, #1a1a1a);
+  --color-accent: var(--site-accent, #1a1a1a);
+  --color-muted: var(--site-muted, #555555);
+  --color-border: var(--site-border, rgba(0,0,0,0.06));
+  --color-nav-bg: var(--site-nav-bg, rgba(255,255,255,0.95));
+  --font-headline: var(--site-font-headline, 'Inter', sans-serif);
+  --font-body: var(--site-font-body, 'Inter', sans-serif);
+  --border-radius: var(--site-border-radius, 0px);
+  --section-padding: var(--site-section-padding, 120px);
+  --headline-weight: var(--site-headline-weight, 700);
+  --headline-tracking: var(--site-headline-tracking, -0.03em);
+  --headline-style: var(--site-headline-style, normal);
+  --body-weight: var(--site-body-weight, 300);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--body-weight);
+  line-height: 1.8;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-headline);
+  font-weight: var(--headline-weight);
+  letter-spacing: var(--headline-tracking);
+  font-style: var(--headline-style);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+section {
+  padding: var(--section-padding) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  section { padding: 60px 0; }
+}
