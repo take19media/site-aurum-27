@@ -4,7 +4,7 @@ export const siteConfig = {
     tagline: "Premium handstitched leather wallets and cardholders made in East London. Vegeta",
     domain: "aurum.co.uk",
   },
-  style: "luxury" as const,
+  style: "luxury",
   nav: {
     links: ["About", "Features", "Contact"],
   },
